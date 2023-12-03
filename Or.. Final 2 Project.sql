@@ -134,7 +134,7 @@ where B_ID='33';
  
  
  /*
- i applied Two Rule means two type Trigger on Staff Table 
+ i applied Many types of Trigger on Staff Table 
  1. For inserting a vule in tabel automatically show a message
  2. a trigger if Occure any Error in the Table
  
@@ -160,7 +160,7 @@ drop Table Staff;
 desc Staff;
 
 -----------------------------------------------------------------
--- use Trigger if occur any error or problim when inserting 
+-- use Trigger if occur any error or problim  
 
 -- First we make a table which we can dicate some rules
 CREATE TABLE staffErrors
@@ -199,10 +199,11 @@ drop trigger backupstaff;
  
  
  
- --- Second Trigger for many operations------------
+ --- Third Trigger for many operations------------
  
    
 -- Create a table for logs
+
 CREATE TABLE StaffttLogs
 (
     EventName VARCHAR2(100)
@@ -249,7 +250,7 @@ drop trigger trg_1 ;
  
  
  ----------------------------------------------------
- -- fourth Trigger give Back up 
+ -- fourth Trigger Do a Operation to Salary then give Back up in a new Table 
  
  
   -- Created  table is Staff table
